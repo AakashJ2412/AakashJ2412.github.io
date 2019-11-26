@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<title>TEDxYouth@DPSMIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<head>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<style>
+body,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+h1{font-family: Helvetica;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url('vids/FAQbg.jpg');
+	position:relative;
+    min-height: 100%;
+	max-width: 100%;
+}
+.button{
+	position:absolute;	
+	left:49%;
+	bottom: 5%;
+	}
+
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 80px;
+  }
+		h2{
+			font-size:48px;
+		}
+`
+		.text{
+			font-size:18px;
+		}
+}
+
+	
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 30px;
+  }
+		h2{
+			font-size:30px
+		}
+		.text{
+			font-size:14px;
+		}
+}
+
+</style>
+
+<body style="background-color:#000000">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-animate">
+	<button class="w3-animate-top w3-bar-item w3-button w3-red w3-text-black w3-hover-text-white w3-hover-black w3-hide-medium w3-hide-large w3-left" onclick="w3_open()">
+			<i class="fa fa-bars"></i>
+	</button>
+	<div class="w3-bar w3-text-white w3-red w3-hide-small" id="myNavbar">
+		<div class="w3-left w3-padding-small w3-hide-small">
+			<a href="index.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-home"></i>&ensp;HOME
+			</a>
+		</div>	
+		<div class="w3-right w3-padding-small w3-hide-small">
+			<a href="about.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-info"></i>&ensp;ABOUT
+			</a>
+    		<div class="w3-dropdown-click">
+    			<button class="w3-button w3-hide-small w3-red w3-hover-black" onclick="myFunc()" id="id2" style="transition:0.5s"><i class="fa fa-group"></i>&ensp;PARTICIPATE</button>
+    			<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-text-black w3-white" id="id1">
+    				<a href="speaker.html" target="_blank" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black w3-padding">Become a Speaker</a>
+      				<a href="volunteer.html" target="_blank" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black w3-padding">Become a Volunteer</a>
+					<a href="Participant.html" target="_blank" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black w3-padding">Become a Participant</a>
+    </div>
+  </div>
+			<!--a href="#speakers" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white "><i class="fa fa-group"></i>&ensp;PARTICIPATE
+			</a-->
+			<a href="theme.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-file-image-o"></i>&ensp;THEME
+			</a>
+   			<a href="team.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-id-badge"></i>&ensp;EXEC TEAM
+			</a>
+			<a href="past.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-backward"></i>&ensp;PAST EVENTS
+			</a>
+   			<a href="index.html#contact" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-envelope"></i>&ensp;CONTACT
+			</a>
+   			<a href="faq.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-question"></i>&ensp;FAQ
+			</a>
+		</div>
+  	</div>
+</div>
+	
+ <!-- Navbar on small screens -->
+<div class="w3-sidebar w3-border-right w3-bar-block w3-hide-large w3-hide-medium w3-animate-left w3-black w3-text-white" style="display:none" id="mySidebar">
+	<button onclick="w3_close()" class="w3-bar-item w3-large w3-red">Close &times;</button>
+	<a href="about.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >ABOUT</a>
+	<button class="w3-button w3-block w3-left-align w3-hover-red w3-hover-text-black" onclick="myAccFunc()">PARTICIPATE</button>
+  		<div id="demoAcc" class="w3-hide w3-white w3-card">
+   			<a href="speaker.html" target="_blank" class="w3-bar-item w3-button w3-text-black w3-hover-black w3-hover-text-white">Become a Speaker</a>
+    		<a href="volunteer.html" target="_blank" class="w3-bar-item w3-button w3-text-black w3-hover-black w3-hover-text-white">Become a Volunteer</a>
+			<a href="Participant.html" target="_blank" class="w3-bar-item w3-button w3-text-black w3-hover-black w3-hover-text-white">Become a Participant</a>
+  		</div>
+	<a href="theme.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >THEME</a>
+   	<a href="team.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >EXEC TEAM</a>
+	<a href="past.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >PAST EVENTS</a>
+	<a href="index.html#contact" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >CONTACT</a>
+	<a href="faq.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black">FAQ</a>
+	<!--a href="#" class="w3-bar-item w3-button">SEARCH</a-->
+</div>
+
+<!-- First Parallax Image with Logo Text text-shadow:0.5vw 0.5vw 0 #444;-->
+<div class="bgimg-1 w3-display-container w3-black w3-animate-opacity " id="home">
+	<div class="w3-display-middle w3-hide-small">
+		<h1 class="w3-wide w3-text-white w3-animate-zoom " style="font-size:11vw"><span>F&ensp;A&ensp;Q</span></h1>
+	</div>
+	<div class="w3-cell w3-cell-middle w3-hide-medium w3-hide-large">
+		<h1 class="w3-wide w3-text-white w3-animate-zoom " style="font-size:9vw"><span><br><br><br><br>&emsp;&emsp;&emsp;&ensp;F&ensp;A&ensp;Q</span></h1>
+	</div>
+	<div id="button" class="w3-display-bottommiddle"><h1 style="font-size:10px">
+<a href="#faq" class="w3-circle w3-red w3-hover-black w3-text-white w3-padding" style="transition:0.5s"><i class="fa fa-angle-double-down"></i></a><br><br></h1>
+	</div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-container w3-black w3-padding-48" id="faq">
+  <div class="w3-row w3-padding-large w3-black">
+    <a href="javascript:void(0)" onclick="opentab(event, 'Participant');">
+		<div class="w3-third tablink w3-bottombar w3-red w3-border-red w3-hover-black w3-hover-border-black w3-padding w3-large" style="text-align:center;transition:0.5s">FAQs for Participants</div>
+    </a>
+    <a href="javascript:void(0)" onclick="opentab(event, 'Volunteer');">
+		<div class="w3-third tablink w3-bottombar  w3-red w3-border-red w3-hover-black w3-hover-border-black w3-padding w3-large" style="text-align:center;transition:0.5s">FAQs for Volunteers</div>
+    </a>
+    <a href="javascript:void(0)" onclick="opentab(event, 'Speaker');">
+		<div class="w3-third tablink w3-bottombar w3-red w3-border-red w3-hover-black w3-hover-border-black w3-padding w3-large" style="text-align:center;transition:0.5s">FAQs for Speakers</div>
+    </a>
+  </div>
+
+  <div id="Participant" class="w3-container w3-padding-32 w3-black tab" style="display:block">
+    <h2 class="w3-center w3-border-bottom w3-border-red ">FAQ for Participants</h2>
+	  <p class="text"><br><br>
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">What is the vision for TED<sup>x</sup>Youth@DPSMIS 2018?</span></i><br>
+
+&ensp;&emsp;TED<sup>x</sup>Youth@DPSMIS 2018 marks our fourth event. With every year, the desire to bring in interesting and dynamic speakers solidifies and we want to primarily work towards that. Keeping this in mind, the fourth edition of our TED<sup>x</sup>Youth event would serve as a source of starting further conversations among the youth of Qatar and to engage them with speakers that talk about ideas that are relevant to the youth and inspire them.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">What is the theme for TED<sup>x</sup>Youth@DPSMIS 2018?</span></i><br>
+
+&ensp;&emsp;The theme for this year’s event is ‘Decoding Deceptions’. From harmless everyday myths to profound logical fallacies, the motive of ‘Decoding Deceptions’ is to challenge the overwhelming tendency to participate in groupthink. In the current global political climate, this theme has not resonated more with the minds of the youth. As the youth come out to form opinions and perspectives without an element of coercion, ’Decoding Deceptions’ attempts to equip them with the right tools to seek truth and fact.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Who will be the audience for this event?</span></i><br>
+&ensp;&emsp;The event is open to all people from the ages 13 to 25.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Who get to be selected as participants/attendees for the event?</span></i><br>
+&ensp;&emsp;Acceptance to be a participant/attendee is strictly based on the merit of the application. Your application has to differentiate itself from the masses and convey an interest to learn from ideas.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">When is the last date of registration for participating/attending?</span></i><br>
+		  &ensp;&emsp;The last date of registration is 5<sup>th</sup> November.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Who are the speakers and what will their talks be about?</span></i><br>
+&ensp;&emsp;Our speakers will be revealed towards the end of October. In accordance with the spirit of TED, our speakers and their talks will be diverse, thought provoking, and interdisciplinary.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Will the speakers’ talks be available after the conference?</span></i><br>
+&ensp;&emsp;Yes. Speakers’ talks will be uploaded on the TED<sup>x</sup> Talks channel on YouTube after the event.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Will the event be live streamed? </span></i><br>
+&ensp;&emsp;No. The event will not be live streamed. But speakers’ talks will be uploaded on the TED<sup>x</sup> Talks channel on YouTube after the event.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">When will the event be held?</span></i><br>
+&ensp;&emsp;The event will be held on 13th November from 4:00 PM to 8:00 PM.<br><br>
+
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Where will the event be held?</span></i><br>
+&ensp;&emsp;The event will be held at DPS-MIS, Al- Wakrah. Once you arrive at the premises, our volunteers will escort you to the auditorium for registration.<br>
+Google Maps:  <a target="_blank" href="https://goo.gl/maps/uGLRn8EiCco">https://goo.gl/maps/uGLRn8EiCco</a><br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">At what time am I expected to arrive?</span></i><br>
+&ensp;&emsp;Registration strictly begins at 3:45 PM. We expect all participants to arrive by this time for smooth registration.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">What is the dress code for the event?</span></i><br>
+&ensp;&emsp;The dress code for the event is strictly smart casuals/semi-formals. We request all participants to adhere to the dress code.
+<br><br>
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Will I receive a certificate?</span></i><br>
+&ensp;&emsp;Yes. You will receive a certificate for attending the event.<br><br>
+
+	</p>
+  </div>
+
+  <div id="Volunteer" class="w3-container w3-black w3-padding-32 tab" style="display:none">
+    <h2 class="w3-center w3-border-bottom w3-border-red " style="font-size:48px;">FAQ for Volunteers</h2>
+	  <p class="text"><br><br>
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Who can volunteer?</span></i><br>
+&ensp;&emsp;Volunteering is only open to 11th and 12th grade students of DPS-MIS.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Why should I volunteer?</span></i>  <br>
+&ensp;&emsp;Volunteering is an enriching opportunity that opens numerous doors for you. Not only will you be able to apply pre-existing skills but you will be able to discover qualities in you that you never knew existed.<br>TED<sup>x</sup>Youth@DPSMIS is an event that is run primarily by the students of class 11th and 12th. The fourth edition of our event focuses on the training of volunteers by different department heads and the collaboration between volunteers and the executive team to put on an event like never before. <br>Therefore, it is an excellent platform to develop skills that can be transferred to various other endeavors.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Do I have to require any previous experience volunteering? </span></i><br>
+&ensp;&emsp;It is not mandatory to require any previous experience. However, it would be helpful if you would cite any areas where you have any sort of skill that will make you a good fit for the department you are applying to. But, if you are unable to cite any previous experience, do not refrain from applying! <br>The selection procedure primarily depends on how well articulated your application is. <br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">What are the different departments that I can volunteer in?</span></i><br>
+		  &ensp;&emsp;You can volunteer in five departments:</p>
+<ul class="text" style="list-style-type:square">
+	<li>&ensp;Design</li>
+	<li>&ensp;Event Management &amp; Logistics</li>
+	<li>&ensp;IT</li>
+	<li>&ensp;Marketing</li>
+	<li>&ensp;Press</li>
+</ul>
+<p class="text">
+Each department plays a vital role in the planning of the event and requires talented and energetic volunteers who can apply existing skills to practical situations. <br><br>
+
+	<i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">What does a volunteer under each department do?</span></i><br>
+
+	&ensp;&emsp;A volunteer’s work depends on what the respective department head requires from you and how much work they delegate to you. It also depends on what you are applying for.<br></p>
+	  <ul class="text" style="list-style-type:square">
+<li>Design:<br>
+	If you are applying for Design, you will need a good creative vision to provide inputs and design various design elements. You will primarily be helping out with the Idea wall. This is an area where you need proof of your artistic ability.</li>
+
+<li>Event Management:<br>
+	If you are applying for Event Management, you will play a huge part in the smooth execution of the event. Therefore, your duties include welcoming, registration, ushering, catering, and coordinating other logistical issues.</li>
+
+<li>IT:<br>
+	If you are applying for IT, you will be involved in dealing with certain aspects of the website and the management of application forms. On the day of the event, you will be helping with the coordination of speakers’ presentations and mics. To be a volunteer under IT, you are required to have a good command over coding and be proficient in coordinating media and audio outputs.</li>
+	
+<li>Marketing:<br>
+	If you are applying for Marketing, you will be in charge of managing and promoting all of our online content as well as securing other offline channels that will help us gain maximum publicity. You will play a hand in cultivating our image and attaining a large amount of applicants from our target demographic by employing various creative marketing strategies.</li>
+
+<li>Press:<br>
+	If you are applying for Press, you will assist the Head of Press in shooting the promotional video which includes brainstorming for ideas that set us apart and partaking in the overall production process of the video. You will also be in charge of shooting the pictures on the days leading up to the event and on the day itself. This is an area where you require a strong grasp over editing software, photography as well as video direction. </li>
+	  </ul>
+	  <p class="text"><br>
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Will I receive a certificate?</span></i><br>
+&ensp;&emsp;Yes. You will receive a certificate confirming your contribution as a volunteer.<br><br>
+
+	</p> 
+  </div>
+
+  <div id="Speaker" class="w3-container w3-black w3-padding-32 tab" style="display:none">
+    <h2 class="w3-center w3-border-bottom w3-border-red " style="font-size:48px;">FAQ for Speakers</h2>
+	  <p class="text"><br><br>
+		  <i class="fa fa-caret-right"></i>&emsp; <span class="w3-text-red"><i>Who can apply as a speaker?</i></span><br>
+&emsp;&ensp;Anyone is welcome to apply as a speaker as long as they are 15 years of age and above and have an interesting idea to share with the youth.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Who get to be selected as speakers?</span></i><br>
+&emsp;&ensp;Selection of speakers strictly depends on the merit of the application received. The idea depicted in the application should be interesting, well substantiated, and most importantly, relevant to the youth.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">How long does one’s talk have to be?</span></i><br>
+&ensp;&emsp;In accordance with TED<sup>x</sup> Rules, no talk can exceed 18 minutes in length.<br><br>
+
+		  <i class="fa fa-caret-right"></i>&emsp;<i><span class="w3-text-red">Are there any restrictions on what a prospective speaker can talk about?</span></i><br>
+&ensp;&emsp;Yes. There are Content Guidelines stipulated by TED which we will abide by to the greatest extent.<br>
+		Content Guidelines: <a target="_blank" href="http://storage.ted.com/tedx/manuals/tedxcontentguidelines.pdf">http://storage.ted.com/tedx/manuals/tedxcontentguidelines.pdf</a><br>
+
+	</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-opacity-min w3-hover-opacity-off w3-padding-64 w3-red w3-hover-text-black" style="transition:0.5s">
+	<a href="#home" class="w3-button w3-white w3-text-black w3-hover-black w3-hover-text-white"><i class="fa fa-angle-double-up w3-margin-right"></i>To the top</a>
+		<div class="w3-xlarge w3-section">
+			<a href="https://urlgeni.us/facebook/6dE2" target="_blank"><i class="fa fa-facebook-official w3-xlarge w3-text-white w3-hover-text-black"></i></a>
+			<a href="https://urlgeni.us/instagram/Hcl4" target="_blank"><i class="fa fa-instagram w3-text-white w3-xlarge w3-hover-text-black"></i></a>
+			<a href="https://www.snapchat.com/add/tedxyouthdps" target="_blank"><i class="fa fa-snapchat w3-text-white w3-xlarge w3-hover-text-black"></i></a>
+			<a href="https://urlgeni.us/youtube/channel/E_5y" target="_blank"><i class="fa fa-youtube w3-text-white w3-hover-text-black w3-xlarge"></i></a>
+			<!--a href="https://urlgeni.us/twitter/aQM8" target="_blank"><i class="fa fa-twitter w3-text-white w3-hover-text-black">			</i></a-->
+		</div>
+		<div>
+			<p class="w3-text-white">Developed by Aakash Jain<br><br></p>
+		</div>
+		<div class=" w3-content w3-border-top w3-border-white w3-red">
+			<div class=" footertext w3-half w3-left-align">
+				<p class="w3-text-white">This independent TED<sup>x</sup> event is operated under license from TED</p>
+			</div>
+			<div class="w3-half w3-right-align w3-hide-small">
+				<p class="w3-text-white" style="font-size:1vw">TED<sup>x</sup>Youth@DPSMIS 2018 Official Website</p>
+			</div>
+		</div>
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+	
+function myFunc() {
+    var x = document.getElementById("id1");
+    var y = document.getElementById("id2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        y.className = y.className.replace(" w3-red", " w3-black");      
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        y.className = y.className.replace(" w3-black", " w3-red");
+       
+    }
+}
+
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-red";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-red", "");
+    }
+}
+function opentab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-black";
+}
+</script>
+<script>
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });	
+</script>
+</body>
+</html>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<title>TEDxYouth@DPSMIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="http://www.tedxyouthdpsmis.com/vids/tedxlogo.jpg" property="og:image">
+<meta content="http://www.tedxyouthdpsmis.com/" property="og:url">
+<meta content="TEDxYouth@DPSMIS" name="title">
+<meta content="Click here to check out the official website of TEDxYouth@DPSMIS 2018." name="description">
+<meta content="www.TEDxYouth@DPSMIS.com" property="og:site_name">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<head>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<style>
+body,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;
+		transition:0.5s;}
+h1 { 
+	font-family: Helvetica;
+	font-style: normal; 
+	font-variant: normal;
+	}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+.div1{
+	position:relative;
+		width:100%;
+	}
+
+#myVideo {    
+    max-width: 100%;
+    height: auto;
+	width: auto;
+	<!--background: url("vids/TEDxlogo.jpg") no-repeat;
+	background-size: cover;-->
+}
+
+.button{
+	position:absolute;
+		bottom:15%;;
+		left:49%;
+		
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+		background-image: url('vids/finalbg1.jpg');
+    	min-height: 100%;
+		max-width: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+		background-image: url("vids/BGIMG1.jpg");
+		max-width:100%;
+    min-height:450px;
+}
+
+/* fourth image (speakers) */
+.bgimg-4 {
+		background-image: url("vids/bgmain3.jpg");
+    min-height: 400px;
+}
+/* Third image (Contact) */
+.bgimg-3 {
+		background-image: url("vids/bg3.jpg");
+    min-height: 400px;
+}
+#more {display: none;}
+#more2 {display: none;}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 80px;
+  }
+		h5,h3{
+			font-size: 40px
+		}
+		 .footertext {
+    font-size: 1vw;
+  }
+		.text{
+			font-size:18px;
+		}
+		.texta{
+			font-size:1.5vw;
+		}
+}
+	
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 30px;
+  }
+
+		h5,h3{
+			font-size:25px;
+		}
+	 .footertext{
+    font-size: 2.5vw;
+  }
+		.text{
+			font-size:13px;
+		}
+		.texta(
+		font-size:3vw;
+		)
+}
+
+</style>
+
+<body style="background-color:#000000">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+	<button class="w3-animate-top w3-bar-item w3-button w3-red w3-text-black w3-hover-text-white w3-hover-black w3-hide-medium w3-hide-large w3-left" onclick="w3_open()">
+			<i class="fa fa-bars"></i>
+	</button>
+	<div class="w3-bar w3-text-white w3-red w3-hide-small" id="myNavbar">
+		<div class="w3-left w3-padding-small w3-hide-small">
+			<a href="#home" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-home"></i>&ensp;HOME
+			</a>
+		</div>	
+		<div class="w3-right w3-padding-small w3-hide-small">
+			<a href="about.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white "style="transition:0.5s"><i class="fa fa-info"></i>&ensp;ABOUT
+			</a>
+    		<div class="w3-dropdown-click">
+    			<button class="w3-button w3-hide-small w3-red w3-hover-black" onclick="myFunc()" id="id2" style="transition:0.5s"><i class="fa fa-group"></i>&ensp;PARTICIPATE</button>
+    			<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-text-black w3-white" id="id1">
+    				<a href="speaker.html" target="_blank" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black w3-padding" >Become a Speaker</a>
+      				<a href="volunteer.html" target="_blank" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black w3-padding" >Become a Volunteer</a>
+					<a href="Participant.html" target="_blank" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black w3-padding" >Become a Participant</a>
+    </div>
+  </div>
+			<a href="theme.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-file-image-o"></i>&ensp;THEME
+			</a>
+   			<a href="team.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-id-badge"></i>&ensp;EXEC TEAM
+			</a>
+			<a href="past.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-backward"></i>&ensp;PAST EVENTS
+			</a>
+   			<a href="#contact" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-envelope"></i>&ensp;CONTACT
+			</a>
+   			<a href="faq.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-question"></i>&ensp;FAQ
+			</a>
+		</div>
+  	</div>
+</div>
+	
+ <!-- Navbar on small screens -->
+<div class="w3-sidebar w3-border-right w3-bar-block w3-hide-large w3-hide-medium w3-animate-left w3-black w3-text-white" style="display:none" id="mySidebar">
+	<button onclick="w3_close()" class="w3-bar-item w3-large w3-red">Close &times;</button>
+	<a href="about.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >ABOUT</a>
+	<button class="w3-button w3-block w3-left-align w3-hover-red w3-hover-text-black" onclick="myAccFunc()">PARTICIPATE</button>
+  		<div id="demoAcc" class="w3-hide w3-white w3-card">
+   			<a href="speaker.html" target="_blank" class="w3-bar-item w3-button w3-text-black w3-hover-black w3-hover-text-white">Become a Speaker</a>
+    		<a href="volunteer.html" target="_blank" class="w3-bar-item w3-button w3-text-black w3-hover-black w3-hover-text-white">Become a Volunteer</a>
+			<a href="Participant.html" target="_blank" class="w3-bar-item w3-button w3-text-black w3-hover-black w3-hover-text-white">Become a Participant</a>
+  		</div>
+	<a href="theme.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >THEME</a>
+   	<a href="team.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >EXEC TEAM</a>
+	<a href="past.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >PAST EVENTS</a>
+	<a href="#contact" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >CONTACT</a>
+	<a href="faq.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black">FAQ</a>
+	<!--a href="#" class="w3-bar-item w3-button">SEARCH</a-->
+</div>
+
+
+<!-- The video -->
+<div class=" div1 w3-container w3-black w3-hide-small">
+	<video id="myVideo" preload="auto" loop autoplay muted>
+		<source src="vids/Mainvideo2.mp4" type="video/mp4">
+	</video>
+	<div class="button"><a href="#home" class="w3-btn w3-red w3-hover-black w3-text-white w3-padding" style="transition:0.5s"><i class="fa fa-angle-double-down"></i></a>
+	</div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-black" id="home">
+	<div class="w3-center w3-hide-small">
+		<!--h1 class=" w3-xxxlarge w3-wide" style="text-shadow:2px 2px 0 #444"><span class="w3-win8-red"><strong>TED<sup>x</sup></strong></span>Youth@DPSMIS</h1-->
+		<h1 style="text-shadow:4px 4px 0 #2C0C05;font-size:4vw"><br><br><br><span class="w3-center w3-wide w3-animate-opacity" style="color:rgb(255,0,0)"><strong>TED<sup>x</sup></strong></span><span class="w3-center w3-wide w3-animate-opacity w3-text-white">Youth @ DPSMIS</span><br></h1>
+		<h1 class=" w3-center"style="text-shadow:2px 2px 0 #2C0C05;font-size:1.4vw"><span class="w3-center w3-animate-opacity" style="color:rgb(255,0,0)"><strong>x</strong></span><span class="w3-center w3-animate-opacity w3-text-white">  =  Independently Organised Event</span><br></h1>
+	</div>
+	<div class="w3-center w3-hide-medium w3-hide-large">
+		<h1 style="text-shadow:2px 2px 0 #2C0C05;font-size:3.8vw"><br><br><br><br><br><br><br><br><br><span class="w3-center w3-animate-opacity w3-wide" style="color:rgb(255,0,0)"><strong>TED<sup>x</sup></strong></span><span class="w3-center w3-animate-opacity w3-text-white w3-wide">Youth @ DPSMIS</span><br></h1>
+		<h1 class=" w3-center"style="text-shadow:1px 1px 0 #2C0C05;font-size:1.3vw"><span class="w3-center w3-animate-opacity" style="color:rgb(255,0,0)"><strong>x</strong></span><span class="w3-center w3-animate-opacity w3-text-white">  =  Independently Organised Event</span><br></h1>
+	</div>
+	<div class="w3-display-bottomleft ">
+		<p class=" texta w3-black w3-text-white w3-hover-red w3-padding " style="font-size:1.4vw;transition:0.5s">Venue: DPS-Modern Indian School</p>
+	</div>
+	<div class=" texta w3-display-bottomright ">
+		<p class="w3-black w3-text-white w3-hover-red w3-padding" style="font-size:1.4vw;transition:0.5s">Date: 13<sup>th</sup> November</p>
+	</div>
+	<!--div class="w3-display-bottomleft w3-animate-left w3-opacity-min w3-black w3-text-white w3-hover-text-red" style="font-size:1.5vw">
+		Venue: DPS-MIS, Al Wakra		
+	</div>
+	<div class="w3-display-bottomright w3-animate-right w3-opacity-min w3-black w3-text-white w3-hover-text-red" style="font-size:1.5vw">
+		Date: 15th November 2018		
+	</div-->
+</div>
+
+<!-- Container (About Section) -->
+<div class=" w3-container w3-padding-64 w3-black w3-text-white w3-border w3-border-black" id="about">
+	<div class=" w3-mobile w3-content w3-black w3-container w3-padding">
+		<h3 class="w3-center w3-hover-text-red w3-border-bottom w3-border-red">What is TED<sup>x</sup>?</h3>
+		<p class=" text w3-center"><br>In the spirit of ideas worth spreading, TED has created a program called TED<sup>x</sup>. TED<sup>x</sup> is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TED<sup>x</sup>Youth@DPSMIS, where x = independently organized TED event. At our TED<sup>x</sup>Youth event, TED Talks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TED<sup>x</sup> program, but individual TED<sup>x</sup> events, including ours, are self-organized.<br><br>
+			To learn more about the TED<sup>x</sup> Programme, <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank">click here</a>.
+		</p>
+	</div>
+
+</div>
+
+<div class="w3-row w3-center w3-red w3-padding-16 w3-text-white">
+	<div class="w3-quarter w3-section w3-hover-text-black" style="transition:0.5s">
+		<span class="w3-xlarge" >4<sup>th</sup></span><br>
+    Edition
+  	</div>
+  	<div class="w3-quarter w3-section w3-hover-text-black"style="transition:0.5s">
+    	<span class="w3-xlarge">5</span><br>
+    Speakers
+  	</div>
+  	<div class="w3-quarter w3-section w3-hover-text-black"style="transition:0.5s">
+    	<span class="w3-xlarge">17</span><br>
+    Volunteers
+  	</div>
+  	<div class="w3-quarter w3-section w3-hover-text-black"style="transition:0.5s">
+    	<span class="w3-xlarge">100+</span><br>
+    Participants
+  	</div>
+</div>
+
+<!-- Modal for full size images on click-->
+<!--div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div-->
+<div class="bgimg-4 w3-display-container w3-opacity-min"  id="speakersmain">
+	<div class="w3-display-middle">
+		<span class=" w3-text-white w3-wide w3-center" style="font-size:6vw"> SPEAKERS</span>
+	</div>
+</div>
+
+<div class=" w3-center w3-container w3-padding-32 w3-black w3-text-white w3-border w3-border-black" id="speakerdetails">
+	<div class=" w3-mobile w3-content w3-black w3-container w3-padding">
+	<h3 class="w3-center w3-hover-text-red w3-border-bottom w3-border-red">TED<sup>x</sup>Youth@DPSMIS 2018 Speakers</h3>
+	<div class="w3-row-padding w3-padding-16">
+		<div class="w3-third w3-padding w3-text-black"><div class=" w3-display-container w3-hover-greyscale w3-center" style="transition:0.5s;width:100%;max-width:275px">
+			<img class="w3-image w3-btn"src="vids/Speak1/Speaker_1.jpg" style="height:100%;max-height:350px" onclick="onClick(this)" alt="<strong>Azza Salah</strong><br><br>The idea of an entrepreneur as a whole has been boiled down to one single element; Hard work. It's crucial without a doubt, however, the world often forgets about the other elements that make a successful entrepreneur. Meet Azza Salah; She's here to change your mind on the conventional idea of entrepreneurship. Having started work at the mere age of 16, she has always attributed her success on her keen intuition and aim to absorb every single opportunity. <br>With this drive, she founded her own company, SkyClimbers, which provides practical experience to the youth of Qatar in the fields of arts and media to further the human development pillar of Qatar's vision 2030. Register now to listen to this inspirational entrepreneur offer a refreshingly honest take on the world career paths and success as she elaborates on the importance of part-time and volunteer work and the sheer necessity for youth empowerment.">
+			</div></div>
+		<div class="w3-third w3-padding"><div class=" w3-display-container w3-hover-greyscale w3-center" style="transition:0.5s;width:100%;max-width:275px">
+			<img class="w3-image w3-btn"src="vids/Speak1/Speaker_2.jpg" style="height:100%;max-height:350px" onclick="onClick(this)" alt="<strong>Khansa Maria</strong><br><br>Meet Khansa Maria. She's not here to be your inspiration. She is, however, here to change your perception on disability. Khansa is a sophomore at Georgetown University, Qatar with a burning interest in alleviating the stigmas surrounding this issue of disability. She is also visually challenged, therefore, she has first-hand knowledge of these stereotypes and their negative effects on the disabled community. In 2016, she founded Hope for Tomorrow, which is an organization that aims to combat the stigmas surrounding disabilities in order to bridge the gap between the disabled and the able-bodied. Make sure you register to hear her perspective on life.">
+			</div></div>
+		<div class="w3-third w3-padding"><div class=" w3-display-container w3-hover-greyscale w3-center" style="transition:0.5s;width:100%;max-width:275px">
+			<img class="w3-image w3-btn"src="vids/Speak1/Speaker_3.jpg" style="height:100%;max-height:350px" onclick="onClick(this)" alt="<strong>Stefan Lindberg-Jones</strong><br><br>Meet Stefan Lindberg-Jones, CEO of Ginger Camel, one of the top media and production companies in Qatar. Stefan has had a rollercoaster of a life. From spending over two years chasing his passion for recording music to qualifying as a masseur. During his crazy journey, he's worked for OSN and ITV. He ultimately established the Your Onion podcast, a business podcast that aims to analyze diverse businesses across Qatar by peeling away each layer all the way from the CEO's to the janitors. Register now to listen to his talk.">
+			</div></div>
+		</div>
+<div class="w3-row-padding w3-padding-16">
+		<div class="w3-third w3-padding w3-text-black"><div class=" w3-display-container w3-hover-greyscale w3-center" style="transition:0.5s;width:100%;max-width:275px">
+			<img class="w3-image w3-btn"src="vids/Speak1/Speaker_4.jpg" style="height:100%;max-height:350px" onclick="onClick(this)" alt="<strong>Shefa Ali</strong><br><br>Presenting our fourth speaker, Ms. Shefa Ali! Shefa captivated us from the very start with touching stories of her volunteering and charity experience. From climbing Mt. Kilimanjaro in Tanzania for raising awareness and funds for the Kilimanjaro Orphanage Centre to engaging in charity initiatives across the UK, Shefa embodies the spirit of service. The ultimate deception she hopes to decode about volunteering is that opportunities are hard to find and require a lot of money. The very act of charity itself has been reduced to big actions that ultimately mean very little. Shefa Ali is here to show you otherwise. Register now to listen to her talk. ">
+			</div></div>
+		<div class="w3-third w3-padding"><div class=" w3-display-container w3-hover-greyscale w3-center" style="transition:0.5s;width:100%;max-width:275px">
+			<img class="w3-image w3-btn"src="vids/Speak1/Speaker_5.jpg" style="height:100%;max-height:350px" onclick="onClick(this)" alt="<strong>Dima Khatib</strong><br><br>Presenting our 5th and final speaker, Dima Khatib! Dima is a greatly accomplished woman. She is the managing Director of AJ+, an award-winning digital news service in English launched by Al Jazeera Media Network. She is also currently the only female executive director within the Al Jazeera group and one of the few female leaders in the Arab media sphere. She has valuable experience working as a live news producer for the Al Jazeera Arabic Channel. She's covered the Iraq War and has interviewed several leaders such as Hugo Chávez. Her journalistic career has greatly shaped her perspective on various aspects of media and journalism and the greater tendency to resort to sensationalism and bias in media. With unprecedented takes on our theme, Decoding Deceptions, Dima is definitely an exciting addition to our event!">
+			</div></div>
+		<div class="w3-third w3-padding"></div>
+		</div>
+	</div>
+	</div>
+	<!--div class=" w3-container w3-padding-16 w3-center w3-hover-text-red">
+		<img class="w3-image w3-hover-opacity w3-btn" src="vids/Exec1/Elsa.jpg" style="height:100%;max-height:375px"onclick="onClick(this)" alt="<strong>Azza Salah</strong><br>Lead Organiser">  
+		<!--p class="w3-center"><span style="font-size:25px">Azza Salah</span><br>
+			<span style="font-size:15px">Lead Organiser</span></p>
+	</div-->
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright w3-hover-red" title="Close Modal Image" style="transition:0.5s"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-content w3-transparent w3-padding-8">
+	  <div class="w3-third w3-padding">
+	  <img id="img01" class="w3-image w3-padding" style="height:365px">
+	  </div>
+	  <div class="w3-twothird w3-padding">
+		  <p id="caption" class="w3-opacity w3-medium w3-padding" style="text-align:justify"></p>
+	  </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min"  id="speakers">
+	<div class="w3-display-middle">
+		<span class=" w3-text-white w3-wide w3-center" style="font-size:6vw"> PARTICIPATE</span>
+	</div>
+</div>
+
+<!-- Container (Participate Section) -->
+<div class=" w3-row-padding w3-padding-32 w3-black">
+	<div class="w3-half w3-padding-large">
+		<h5 class=" w3-hover-text-red w3-border-bottom w3-border-red w3-center">Principal's Message</h5>
+		<img src="vids/Principal2.jpg" class="w3-padding-16" style="width:100%;max-width:250px;">
+		<p class="text w3-padding-16" style="text-align:justify">Dear Students,<br>
+
+“The greatest deception men suffer is from their own opinions”, said Leonardo da Vinci. The students of DPS MIS not only helped themselves decoding their deceptions but also made us overcome our apprehensions, taking up the charge of TED<sup>x</sup> platform. Born four years back reinforcing the thought in us “You are never too old to set another goal or<span id="dots">...</span><span id="more"> to dream a new dream”, the TED<sup>x</sup> stage has glorified itself in themost extraordinary manner, subjugating the fear within, challenging its own challenges, expanding its boundaries and outshining. I congratulate all the students who stand as a TED<sup>x</sup> unit, conceiving, executing and making the plan work out successfully every time, all on their own, thereby facilitating themselves chiselling their entrepreneur skills, inculcating self-discipline working within timelines, enriching themselves with added sense of responsibility.<br> TED<sup>x</sup> provides our students with a platform to enhance their skill set of formulating ideas, public speaking, convincing the audience and setting stage on fire through their personality, providing a holistic growth taking a step towards being a global citizen by inspiring and getting inspired. The journey so far has been a captivating and enthralling one.<br>
+
+May this charisma grow each year!
+ 
+ <br><br>
+Asna Nafees<br>
+Principal<br>
+DPS-Modern Indian School
+			</span></p>
+<button onclick="myFunctionread()" id="myBtna" class="w3-btn w3-white w3-hover-red w3-text-black w3-hover-text-white" style="transition:0.5s"><i class="fa fa-caret-down"></i> Read more</button>
+	</div>
+	
+	<div class="w3-half w3-padding-large">
+		<h5 class=" w3-hover-text-red w3-border-bottom w3-border-red w3-center">Lead Organiser's Message</h5>
+		<img src="vids/Lead.jpg" class="w3-padding-16"style="width:100%;max-width:140px;">
+		<p class="text w3-padding-16" style="text-align:justify">
+			It brings me the greatest happiness to witness the official commencement of the fourth edition of the TED<sup>x</sup>Youth@DPSMIS series. Seeing the event and its making take off truly does put matters into perspective. It is the ultimate privilege to serve as the Lead Organizer of the 2018 event along with my talented Executive Team. My vision for the event is simple: To challenge the youth of Qatar through ideas<span id="dots2">...</span><span id="more2">. With the theme of our event being set as ‘Decoding Deceptions’, I would like to take a moment to reiterate that it is critical to stop pandering to the mainstream narrative. With the rapid progression of social media as a staple source of information, it is imperative to spread the message of critical thinking and individuality among the youth of Qatar.<br> The 2018 event marks our 4<sup>th</sup> edition in the TED<sup>x</sup>Youth@DPSMIS series. It is with great gratitude that we stand to be the longest running TED<sup>x</sup>Youth event in Qatar. It is only fair to say that this event would not have been possible without the support of our Management, our Principal, Ms. Asna Nafees, our Headmistress, Ms. Soma Bhattacharjee, and the numerous other key individuals who have guided us along the road. The support for our event has been overwhelming and is truly appreciated. It only gets more exciting from here.<br>So, whether you’re a speaker, volunteer, or participant, I hope to see you all on November 13, to witness history in the making.
+
+ 
+ <br><br>
+Elsa Philip<br>
+Lead Organiser<br>
+TED<sup>x</sup>Youth@DPSMIS 2018
+</span></p>
+<button onclick="myFunctionread2()" id="myBtna2" class="w3-btn w3-white w3-hover-red w3-text-black w3-hover-text-white" style="transition:0.5s"><i class="fa fa-caret-down"></i> Read more</button>
+	</div>
+
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min w3-black" id="contact">
+  <div class="w3-display-middle">
+	  <span class=" w3-text-white w3-text-hover-black w3-wide" style="font-size:6vw">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class=" w3-container w3-padding-64 w3-black">
+	<div class="w3-content w3-black w3-container">
+		<h3 class="w3-center w3-hover-text-red w3-border-bottom w3-border-red">CONTACT US</h3>
+		<p class="text w3-center w3-text-white w3-black"><em>Please contact us for any queries!</em></p>
+		<div class="w3-row w3-padding-32 w3-section">
+    		<div class=" w3-col m6 w3-container w3-grayscale-min">
+      			<!-- Add Google Maps -->
+      			<div id="googleMap" class="w3-round-large" style="width:100%;height:400px;"></div>
+    		</div>
+    		<div class="w3-col m6 w3-panel w3-black w3-text-white">
+				<div class="text w3-large w3-margin-bottom w3-black">
+        			<i class="fa fa-map-marker fa-fw w3-hover-text-red w3-xlarge w3-margin-right"></i> DPS-MIS, Doha<br>
+        			<i class="fa fa-phone fa-fw w3-hover-text-red w3-xlarge w3-margin-right"></i> Phone: +974 44499100<br>
+        			<i class="fa fa-envelope fa-fw w3-hover-text-red w3-xlarge w3-margin-right"></i> Email: tedxdpsmis@gmail.com<br>
+      			</div>
+      		<p class"text w3-black w3-text-white">Send us any questions you may have pertaining to the event</p>
+      		<form action="mail.php" method="POST" enctype="multipart/form-data">
+				<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          			<div class="w3-half">
+            			<input class="w3-input w3-border" type="text" placeholder="Name" name="name" id="name">
+          			</div>
+          			<div class="w3-half">
+            			<input class="w3-input w3-border" type="text" placeholder="Email" name="email" id="email">
+          			</div>
+        		</div>
+        		<input class="w3-input w3-border" type="text" placeholder="Message" id="message" name="message">
+        		<button class="w3-btn w3-white w3-hover-red w3-text-black w3-right w3-section" type="submit" style="transition:0.5s">
+          		<i class="fa fa-paper-plane"></i> SEND MESSAGE
+        		</button>
+				<!--input type="submit" value="Email This Form"-->
+      		</form>
+			</div>
+		</div>
+  	</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-opacity-min w3-hover-opacity-off w3-padding-64 w3-red w3-hover-text-black" style="transition:0.5s">
+	<a href="#home" class="w3-button w3-white w3-text-black w3-hover-black w3-hover-text-white" ><i class="fa fa-angle-double-up w3-margin-right"></i>To the top</a>
+		<div class="w3-xlarge w3-section">
+			<a href="https://urlgeni.us/facebook/6dE2" target="_blank"><i class="fa fa-facebook-official w3-xlarge w3-text-white w3-hover-text-black"></i></a>
+			<a href="https://urlgeni.us/instagram/Hcl4" target="_blank"><i class="fa fa-instagram w3-text-white w3-xlarge w3-hover-text-black"></i></a>
+			<a href="https://www.snapchat.com/add/tedxyouthdps" target="_blank"><i class="fa fa-snapchat w3-text-white w3-xlarge w3-hover-text-black"></i></a>
+			<a href="https://urlgeni.us/youtube/channel/E_5y" target="_blank"><i class="fa fa-youtube w3-text-white w3-hover-text-black w3-xlarge"></i></a>
+			<!--a href="https://urlgeni.us/twitter/aQM8" target="_blank"><i class="fa fa-twitter w3-text-white w3-hover-text-black">			</i></a-->
+		</div>
+		<div>
+			<p class="text w3-text-white">Developed by Aakash Jain<br><br></p>
+		</div>
+		<div class=" w3-content w3-border-top w3-border-white">
+			<div class=" footertext w3-half w3-left-align">
+				<p class="w3-text-white">This independent TED<sup>x</sup> event is operated under license from TED</p>
+			</div>
+			<div class="w3-half w3-right-align w3-hide-small">
+				<p class="w3-text-white" style="font-size:1vw">TED<sup>x</sup>Youth@DPSMIS 2018 Official Website</p>
+			</div>
+		</div>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(25.174375,51.603157);
+  var mapOptions= {
+    center:myCenter,
+    zoom:11, scrollwheel: false, draggable: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+	animation: google.maps.Animation.BOUNCE,
+  });
+  marker.setMap(map);
+
+google.maps.event.addListener(marker,'click',function() {
+  var pos = map.getZoom();
+  map.setZoom(15);
+  map.setCenter(marker.getPosition());
+  infowindow.open(map,marker);
+});
+var infowindow = new google.maps.InfoWindow({
+  content:"TEDxYouth@DPSMIS"
+  });
+		
+}
+
+function myFunc() {
+    var x = document.getElementById("id1");
+    var y = document.getElementById("id2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        y.className = y.className.replace(" w3-red", " w3-black");      
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        y.className = y.className.replace(" w3-black", " w3-red");
+       
+    }
+}
+
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-red";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-red", "");
+    }
+}
+	
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+	/*window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-red";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-red", " w3-text-black w3-white ");
+    }*/
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+	/*function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+	}*/
+
+</script>
+<script>
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });	
+	
+function myFunctionread() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtna");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunctionread2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtna2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<!--<script>
+	var video = document.getElementsByTagName("myVideo")[0];
+
+    video.onended = function(e) {
+      jQuery("div1").remove();
+    }
+	/*document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+        $("div2"),remove();// What you want to do after the event
+    }*/
+</script>
+<!--script>
+	var vid = document.getElementById("myVideo");
+	vid.onended = function() {
+    var elem = document.getElementById("div1");
+	elem.remove();
+}
+</script-->
+	
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzWTi-IVhY6mRMhAGa5ld9yepi5ezdhJk&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+
+
+</body>
+</html>

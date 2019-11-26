@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<title>TEDxYouth@DPSMIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<head>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<style>
+body,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+h1{font-family: Helvetica;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url('vids/pastbg.jpg');
+	position:relative;
+    min-height: 100%;
+	max-width: 100%;
+}
+.button{
+	position:absolute;	
+	left:49%;
+	bottom: 5%;
+	}
+
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 80px;
+  }
+		h2{
+			font-size:48px;
+		}
+`
+		.text{
+			font-size:18px;
+		}
+}
+
+	
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 30px;
+  }
+		h2{
+			font-size:30px
+		}
+		.text{
+			font-size:14px;
+		}
+}
+
+</style>
+
+<body style="background-color:#000000">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-animate">
+	<button class="w3-animate-top w3-bar-item w3-button w3-red w3-text-black w3-hover-text-white w3-hover-black w3-hide-medium w3-hide-large w3-left" onclick="w3_open()">
+			<i class="fa fa-bars"></i>
+	</button>
+	<div class="w3-bar w3-text-white w3-red w3-hide-small" id="myNavbar">
+		<div class="w3-left w3-padding-small w3-hide-small">
+			<a href="index.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-home"></i>&ensp;HOME
+			</a>
+		</div>	
+		<div class="w3-right w3-padding-small w3-hide-small">
+			<a href="about.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-info"></i>&ensp;ABOUT
+			</a>
+    		<div class="w3-dropdown-click">
+    			<button class="w3-button w3-hide-small w3-red w3-hover-black" onclick="myFunc()" id="id2" style="transition:0.5s"><i class="fa fa-group"></i>&ensp;PARTICIPATE</button>
+    			<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-text-black w3-white" id="id1">
+    				<a href="speaker.html" target="_blank" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black w3-padding">Become a Speaker</a>
+      				<a href="volunteer.html" target="_blank" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black w3-padding">Become a Volunteer</a>
+					<a href="Participant.html" target="_blank" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black w3-padding">Become a Participant</a>
+    </div>
+  </div>
+			<!--a href="#speakers" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white "><i class="fa fa-group"></i>&ensp;PARTICIPATE
+			</a-->
+			<a href="theme.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-file-image-o"></i>&ensp;THEME
+			</a>
+   			<a href="team.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-id-badge"></i>&ensp;EXEC TEAM
+			</a>
+			<a href="past.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-backward"></i>&ensp;PAST EVENTS
+			</a>
+   			<a href="index.html#contact" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-envelope"></i>&ensp;CONTACT
+			</a>
+   			<a href="faq.html" class="w3-bar-item w3-btn w3-hide-small w3-hover-black w3-hover-text-white " style="transition:0.5s"><i class="fa fa-question"></i>&ensp;FAQ
+			</a>
+		</div>
+  	</div>
+</div>
+	
+ <!-- Navbar on small screens -->
+<div class="w3-sidebar w3-border-right w3-bar-block w3-hide-large w3-hide-medium w3-animate-left w3-black w3-text-white" style="display:none" id="mySidebar">
+	<button onclick="w3_close()" class="w3-bar-item w3-large w3-red">Close &times;</button>
+	<a href="about.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >ABOUT</a>
+	<button class="w3-button w3-block w3-left-align w3-hover-red w3-hover-text-black" onclick="myAccFunc()">PARTICIPATE</button>
+  		<div id="demoAcc" class="w3-hide w3-white w3-card">
+   			<a href="speaker.html" target="_blank" class="w3-bar-item w3-button w3-text-black w3-hover-black w3-hover-text-white">Become a Speaker</a>
+    		<a href="volunteer19.html" target="_blank" class="w3-bar-item w3-button w3-text-black w3-hover-black w3-hover-text-white">Become a Volunteer</a>
+			<a href="Participant.html" target="_blank" class="w3-bar-item w3-button w3-text-black w3-hover-black w3-hover-text-white">Become a Participant</a>
+  		</div>
+	<a href="theme19.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >THEME</a>
+   	<a href="team19.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >EXEC TEAM</a>
+	<a href="past.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >PAST EVENTS</a>
+	<a href="index.html#contact" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black" >CONTACT</a>
+	<a href="faq.html" class="w3-bar-item w3-button w3-hover-red w3-hover-text-black">FAQ</a>
+	<!--a href="#" class="w3-bar-item w3-button">SEARCH</a-->
+</div>
+
+<!-- First Parallax Image with Logo Text text-shadow:0.5vw 0.5vw 0 #444;-->
+<div class="bgimg-1 w3-display-container w3-black w3-animate-opacity " id="home">
+	<div class="w3-center w3-hide-small">
+		<h1 class="w3-wide w3-text-white w3-animate-zoom " style="font-size:7.5vw"><span><br>P&ensp;A&ensp;S&ensp;T<br>E&ensp;D&ensp;I&ensp;T&ensp;I&ensp;O&ensp;N&ensp;S</span></h1>
+	</div>
+	<div class="w3-cell w3-cell-middle w3-hide-medium w3-hide-large">
+		<h1 class="w3-wide w3-text-white w3-animate-zoom " style="font-size:9vw"><span><br><br><br>&emsp;&emsp;&ensp;P&ensp;A&ensp;S&ensp;T<br>&ensp;E&ensp;D&ensp;I&ensp;T&ensp;I&ensp;O&ensp;N&ensp;S</span></h1>
+	</div>
+	<div id="button" class="w3-display-bottommiddle"><h1 style="font-size:10px"><a style="transition:0.5s" href="#past" class="w3-circle w3-red w3-hover-black w3-text-white w3-padding"><i class="fa fa-angle-double-down"></i></a><br><br></h1>
+	</div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-container w3-black w3-padding-48" id="past">
+  <div class="w3-row w3-padding-large w3-black">
+    <a href="javascript:void(0)" onclick="opentab(event, '2015');">
+		<div class="w3-quarter tablink w3-bottombar w3-red w3-border-red w3-hover-black w3-hover-border-black w3-padding w3-large" style="text-align:center;transition:0.5s">2015</div>
+    </a>
+    <a href="javascript:void(0)" onclick="opentab(event, '2016');">
+		<div class="w3-quarter tablink w3-bottombar  w3-red w3-border-red w3-hover-black w3-hover-border-black w3-padding w3-large" style="text-align:center;transition:0.5s">2016</div>
+    </a>
+    <a href="javascript:void(0)" onclick="opentab(event, '2017');">
+		<div class="w3-quarter tablink w3-bottombar w3-red w3-border-red w3-hover-black w3-hover-border-black w3-padding w3-large" style="text-align:center;transition:0.5s">2017</div>
+    </a>
+	  <a href="javascript:void(0)" onclick="opentab(event, '2018');">
+		<div class="w3-quarter tablink w3-bottombar w3-red w3-border-red w3-hover-black w3-hover-border-black w3-padding w3-large" style="text-align:center;transition:0.5s">2018</div>
+    </a>
+  </div>
+
+  <div id="2015" class="w3-container w3-padding-32 w3-black tab" style="display:block">
+    <h2 class="w3-center w3-border-bottom w3-border-red ">TED<sup>x</sup>Youth@DPSMIS 2015</h2>
+	  <p class="text"><br><br>
+		 The very first TEDxYouth@DPSMIS event was held 5 years ago, on the 27th of December and had featured the theme ‘The Power of Uncertainty’ which left behind an audience ready to embrace uncertainty and to make the best out of life when it is at its most unpredictable. Our inaugural event featured the youth icon, Nawaal Akram, who connects through her wry humor and inspires in her perseverance in addition to other equally dynamic individuals who shared their ideas, which encapsulate innovation, determination, and spirit. These ideas instilled in the audience the very principle of TED which is ‘Ideas Worth Spreading’. Keeping this sentiment in mind, it was decided to establish TEDxYouth@DPSMIS as an annual event.<br>
+		  The Speakers of TED<sup>x</sup>Youth@DPSMIS 2015 were:<br><br><br>
+		</p>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2015Abdul.png" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Abdulrahman Sajid</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/4re0F5FFeBM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2015Abhipray.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Abhipray Sahoo</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/wcqtJwvMAXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2015Anu.png" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Anu Jossan</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/_iDD_Zi0DU8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2015Cyril.png" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Cyril Anand</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/nHBw-l-bSAI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="w3-row w3-padding-32">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2015Nawaal.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Nawaal Akram</span></p>
+	</div>
+</div>
+
+  <div id="2016" class="w3-container w3-black w3-padding-32 tab" style="display:none">
+    <h2 class="w3-center w3-border-bottom w3-border-red " style="font-size:48px;">TED<sup>x</sup>Youth@DPSMIS 2016</h2>
+	  <p class="text"><br><br>
+		 The second event took place on 30th November, 2016 with the theme ‘Transcend and Include’. Our 2016 event presented Qatar’s very own Hamad Al Amari, one of the most acclaimed comedians in the region as well as a diverse panel of speakers ranging from student to doctor and traveler to style icon, which perfectly epitomizes the theme of inclusivity. Their ideas stressed on the perseverance of the human spirit, a voyage across the world like no other, and a perspective from of girl far ahead of her years. Each idea, radically different from the other, enthralled the audience and served to make the night a memorable one.<br>
+		  The Speakers of TED<sup>x</sup>Youth@2016 were:<br><br><br>
+	</p>
+	 <div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2016Denisse.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Denisse Ann El Mundo</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/d2aIpfI8MuA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2016Hamad.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Hamad Al Amari</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/AhI1L7mINdw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2016Layla.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Layla Al Siyabi</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/jiwQRjApmkI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2016Lubaib.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Lubaib Gazir</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/GaJun2dLLUM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	 <div class="w3-row w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2016Verjee.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Dr. Mohammed A Verjee</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/WKs-ybG5sLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+  </div>
+
+  <div id="2017" class="w3-container w3-black w3-padding-32 tab" style="display:none">
+    <h2 class="w3-center w3-border-bottom w3-border-red " style="font-size:48px;">TED<sup>x</sup>Youth@DPSMIS 2017</h2>
+	  <p class="text"><br><br>
+		The third edition of TEDxYouth@DPSMIS was held on 2nd November, 2017 and feautured the theme ‘Breaking through Inhibitions’. With speakers including Mr. Khalifa Al Haroon, whose vast digital network initiatives including ‘iLoveQatar.net’ have made him a youth icon and one of Qatar’s most prolific entrepreneurs, the event featured an eclectic group of speakers ranging from the fields of science to deeds of charity. The speakers and their various ideas stressed upon the notion of abandoning one’s inhibitions due fear, ignorance, and insecurity. The night was one of immense and enlightenment and engagement for the audience, who were captivated by the talks.<br>
+		  The Speakers of TED<sup>x</sup>Youth@2017 were:<br><br><br>
+	</p>
+	  
+	 <div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2017Arvind.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Arvind Rampal</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/fg7Dlkrl_BM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2017Khalifa.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Khalifa Al-Haroon</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/V60MCIZQjks" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2017Maleeha.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Maleeha Fatima</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/yInW89FJ97k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2017Said.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Dr. Said Ismail</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/incbxI5jMWw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	 <div class="w3-row w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/pastpics/2017Salman.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Salman Al-Khanji</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/C7328y_rA18" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+  </div>
+	
+  <div id="2018" class="w3-container w3-black w3-padding-32 tab" style="display:none">
+    <h2 class="w3-center w3-border-bottom w3-border-red " style="font-size:48px;">TED<sup>x</sup>Youth@DPSMIS 2018</h2>
+	  <p class="text"><br>
+		  
+		 Our last edition was held on 13th November 2018 which celebrated the sport of 'Ideas worth Spreading' under the theme 'Decoding Deceptions'. Our team meticulously constructed an event featuring a panel of interdisciplinary speakers whose ideas served to challenge the paradigm of conventional thinking. <br>
+		  The Speakers of TED<sup>x</sup>Youth@DPSMIS 2018 were:<br><br><br>
+	</p>
+	  <div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/Speak1/Speaker_1.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Azza Salah</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/OAEjTv7QEls" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/Speak1/Speaker_2.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Khansa Maria</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/FRgNRvnedK0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/Speak1/Speaker_3.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Stefan Lindberg-Jones</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/Uj2dFuXTavo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="w3-row w3-border-bottom w3-border-red w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/Speak1/Speaker_4.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Shefa Ali</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/JLK2s6OPSSM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+	 <div class="w3-row w3-padding-32">
+  		<div class="w3-col m5">
+			<div class="w3-center">
+			<img class="w3-image w3-opacity w3-hover-opacity-off" src="vids/Speak1/Speaker_5.jpg" style="height:100%;max-height:300px;transition:0.5s"> 
+			</div>
+			<p class="w3-center"><span style="font-size:25px">Dima Khatib</span></p>
+		</div>
+  		<div class="w3-col m7 w3-center">
+			<iframe style="width:100%;max-width:560px;height:315px"src="https://www.youtube.com/embed/diH6PQE6NRg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-opacity-min w3-hover-opacity-off w3-padding-64 w3-red w3-hover-text-black"style="transition:0.5s">
+	<a href="#home" class="w3-button w3-white w3-text-black w3-hover-black w3-hover-text-white"><i class="fa fa-angle-double-up w3-margin-right"></i>To the top</a>
+		<div class="w3-xlarge w3-section">
+			<a href="https://urlgeni.us/facebook/6dE2" target="_blank"><i class="fa fa-facebook-official w3-xlarge w3-text-white w3-hover-text-black"></i></a>
+			<a href="https://urlgeni.us/instagram/Hcl4" target="_blank"><i class="fa fa-instagram w3-text-white w3-xlarge w3-hover-text-black"></i></a>
+			<a href="https://www.snapchat.com/add/tedxyouthdps" target="_blank"><i class="fa fa-snapchat w3-text-white w3-xlarge w3-hover-text-black"></i></a>
+			<a href="https://urlgeni.us/youtube/channel/E_5y" target="_blank"><i class="fa fa-youtube w3-text-white w3-hover-text-black w3-xlarge"></i></a>
+			<!--a href="https://urlgeni.us/twitter/aQM8" target="_blank"><i class="fa fa-twitter w3-text-white w3-hover-text-black">			</i></a-->
+		</div>
+		<div>
+			<p class="w3-text-white">Developed by Aakash Jain<br><br></p>
+		</div>
+		<div class=" w3-content w3-border-top w3-border-white w3-red">
+			<div class=" footertext w3-half w3-left-align">
+				<p class="w3-text-white">This independent TED<sup>x</sup> event is operated under license from TED</p>
+			</div>
+			<div class="w3-half w3-right-align w3-hide-small">
+				<p class="w3-text-white" style="font-size:1vw">TED<sup>x</sup>Youth@DPSMIS 2018 Official Website</p>
+			</div>
+		</div>
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+	
+function myFunc() {
+    var x = document.getElementById("id1");
+    var y = document.getElementById("id2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        y.className = y.className.replace(" w3-red", " w3-black");      
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        y.className = y.className.replace(" w3-black", " w3-red");
+       
+    }
+}
+
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-red";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-red", "");
+    }
+}
+function opentab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-black";
+}
+</script>
+<script>
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });	
+</script>
+</body>
+</html>
